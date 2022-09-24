@@ -1,0 +1,116 @@
+
+hr{
+  margin: 50px;
+  border: 1px solid black;
+}
+
+main{
+  width: 90vw;
+  margin: auto;
+  border: 1px solid black;
+  background-color: rgb(255, 215, 163);
+  box-shadow: 20px 0 50px, -20px 0 50px;
+  border-radius: 10px;
+}
+
+main article h1.titulo-principal{
+  font-size: 70px;
+  text-align: start;
+  margin-left: 50px;
+}
+
+main article h1{
+  font-size: 40px;
+  text-align: start;
+  margin-left: 50px;  
+}
+
+main article h3{
+  text-align: start;
+  margin-left: 50px;
+}
+
+main article p{
+  text-indent: 50px;
+  font-size: 20px;
+  margin: 0 150px;
+  text-align: justify;
+}
+
+main article div.carta{
+  padding: 40px;
+  margin: 20px 100px;
+  border: 3px solid black;
+  border-radius: 20px;
+  box-shadow: 10px 10px 5px;
+  background-color: rgb(255, 242, 225);
+}
+
+main article div.carta p{
+  font-size: 20px;
+  text-align: justify;
+}
+
+main article div.carta i ~ p{
+  font-size: 15px;
+}
+
+main article ol{
+  width: 50%;
+  margin: 10px 20%;
+  text-align: justify;
+}
+
+main article ol li{
+  width: 100%;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+main article div.contenedor{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+main article div.contenedor-imagenes{
+  display: flex;
+  flex-direction: column;
+}
+
+main article div.contenedor-imagenes img{
+  width: 60%;
+  height: 100%;
+  margin: auto;
+  margin-bottom: 20px;
+  border-radius: 10px;
+}
+
+main article div.contenedor-imagenes img:hover{
+  transition: all .5s;
+  transform: scale(1.05);
+}
+
+main article ul{  
+  width: 50%;
+  margin: auto;
+  margin-bottom: 5%;
+  box-shadow: 5px 5px 10px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+main article ul a{
+  margin: 10px;
+  font-size: 20px;
+}
+
+main article ul a:hover{
+  transition: all .7s;
+  transform: scale(1.3);
+}
