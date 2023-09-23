@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="author" content="Ender Rodríguez">
+  <meta name="description" content="Proyecto 'Arte del origen' promueve una propuesta donde se desarrolle el arte con la más pura esencia de los pigmentos naturales, como lo son flores, tierra, hojas, entre otros más.">
+  <meta name="keywords" content="arte, origen, tierra, flores, natural, Ender Rodriguez, pintura">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Arte del Origen</title>
+  <link rel="shortcut icon" href="/imgs/Logo-ER1.png" type="image/x-icon">
+  <link rel="stylesheet" href="/styles/styles.css">
+</head>
+<body>
+  <%- include("partials/header.ejs") %>
+  <main>
+    <%- include("partials/intro.ejs") %>
+    <hr id="1">
+    <%- include("partials/what_is.ejs") %>
+    <hr id="2">
+    <%- include("partials/contact.ejs") %>
+    <hr id="3">
+    <%- include("partials/curriculum.ejs") %>
+    <hr id="4">
+    <%- include("partials/awards.ejs") %>
+    <hr id="5">
+    <%- include("partials/sponsor.ejs") %>
+    <hr id="6">
+    <%- include("partials/links.ejs") %>
+    <hr id="7">
+    <%- include("partials/data.ejs") %>
+    <hr id="8">
+    <%- include("partials/support.ejs") %>
+    <hr id="9">
+    <%- include("partials/photos.ejs") %>
+    <hr id="10">
+    <%- include("partials/videos.ejs") %>
+  </main>
+  <%- include("partials/footer.ejs") %>
+</body>
+<script src="/functions/carrusel.js"></script>
+<script src="/functions/mostrar.js"></script>
+</html>

@@ -1,0 +1,134 @@
+header {
+  box-shadow: 1px 2px 50px;
+  border: 1px solid #000;
+}
+header ul.navegacion {
+  position: fixed;
+  margin-top: 0;
+  z-index: 100;
+  background-color: rgb(226, 178, 88);
+  width: 100%;
+  height: auto;
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  font-size: 25px;
+}
+header ul.navegacion button {
+  width: 50px;
+  height: 40px;
+  background: none;
+  font-size: 20px;
+  border: 1px solid #000;
+  display: none;
+}
+header ul.navegacion button:hover {
+  background-color: rgb(184, 145, 73);
+}
+header ul.navegacion li {
+  margin-block: 10px;
+}
+header ul.navegacion li a img {
+  max-width:  70px;
+   height:  auto;
+}
+header ul.navegacion a {
+  text-decoration: none;
+  color: rgb(91, 65, 30);
+  display: block;
+}
+header ul.navegacion a:hover {
+  text-decoration: underline;
+}
+header div.carrusel {
+  margin-top: 5vh;
+  display: flex;
+  background-color: antiquewhite;
+  width: 300%
+}
+header div.carrusel div.carrusel-item {
+  height: 80vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background: radial-gradient(rgb(161, 88, 33), rgb(0, 0, 0));
+  transition: all .7s ease;
+  transform: translate(0%);
+  overflow: hidden;
+}
+header div.carrusel div.carrusel-item img {
+  height: 130%;
+  width: auto;
+  transform: scale(1.6);
+  filter: brightness(.6);
+}
+header div.carrusel ul {
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 2;
+  list-style-type: none;
+}
+header div.carrusel ul button {
+  color: #fff;
+  background: none;
+  border: none;
+  font-size: 100px;
+  margin: 0 50px;
+}
+
+@media screen and (max-width:700px) {
+  header ul.navegacion {
+    font-size: 25px;
+    flex-direction: column;
+    align-items: baseline;
+  }
+  header ul.navegacion button {
+    display: block;
+  }
+  header ul.navegacion li {
+    margin: 0;
+  }
+  header ul.navegacion a {
+    display: none;
+  }
+  header div.carrusel div.carrusel-item {
+    height: 60vh;
+  }
+  header div.carrusel div.carrusel-item img {
+    height: 100%}
+  header div.carrusel ul {
+    height: 60vh;
+  }
+  header div.carrusel ul button {
+    font-size: 70px;
+  }
+}
+
+@media screen and (min-width:700px) and (max-width:1200px) {
+  header ul.navegacion {
+  font-size: 25px;
+  }
+  header ul.navegacion li {
+    margin: 10px 0;
+  }
+  header div.carrusel div.carrusel-item {
+    height: 75vh;
+  }
+  header div.carrusel div.carrusel-item img {
+    height: 100%
+  }
+  header div.carrusel ul {
+    height: 60vh;
+  }
+  header div.carrusel ul button {
+    font-size: 70px;
+  }
+}
